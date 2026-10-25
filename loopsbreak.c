@@ -3,13 +3,13 @@ int main(){
     int n;
     printf("Enter the number : ");
     scanf("%d",&n);
-    int lf;
+    int hf;
     for(int i = n-1 ; i>=1 ; i--){
         if(n%i==0){
-            lf = i;
+            hf = i;
             break;
         }
     }
-    printf("%d",lf);
+    printf("%d",hf);
     return 0;
 }
