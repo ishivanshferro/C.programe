@@ -1,7 +1,14 @@
 #include<stdio.h>
 int main(){
-    for(int i = 100 ; i>=1 ; i--){
-        printf("%d\n",i);
+    int n;
+    printf("Enter the number : ");
+    scanf("%d",&n);
+    int hf;
+    for(int i = 1 ; i<n ; i++){
+        if(n%i==0){
+            hf = i;
+        }
     }
+    printf("%d",hf);
     return 0;
 }
