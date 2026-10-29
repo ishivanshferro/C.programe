@@ -4,12 +4,14 @@ int main(){
     printf("enter the number : ");
     scanf("%d",&n);
     int r = 0;
+    int x ;
+    x = n;
     while(n>0){
     int rem = n%10;
     n = n/10;
     r = r*10;
     r = r + rem;
     }
-    printf("the rev of  number %d", r);
+    printf("the rev of  number %d\n", r+x);
     return 0;
 }
