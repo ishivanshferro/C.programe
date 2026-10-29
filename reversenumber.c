@@ -12,6 +12,6 @@ int main(){
     r = r*10;
     r = r + rem;
     }
-    printf("the rev of  number %d\n", r+x);
+    printf("the rev and original sum of  number %d\n", r+x);
     return 0;
 }
