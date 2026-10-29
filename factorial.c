@@ -5,8 +5,8 @@ int main(){
     scanf("%d",&n);
     int p = 1;
     for(int i = 1; i<=n;i++){
-        p = p+i;
+        p = p*i;
+         printf("Factorial sum of %d\n",p);
     }
-    printf("Factorial of %d",p);
     return 0;
 }
