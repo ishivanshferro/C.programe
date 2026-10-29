@@ -3,10 +3,10 @@ int main(){
     int n;
     printf("enter the number : ");
     scanf("%d",&n);
-    while(n>0){
-        int ls = n%10;
-        n = n/10;
-        printf("%d",ls);
+    int pr = 1;
+    for(int i = 1; i<=n; i++){
+    pr = pr * i ;
     }
+    printf("factorial %d", pr);
     return 0;
 }
