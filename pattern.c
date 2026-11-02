@@ -7,8 +7,8 @@ int main(){
     printf("Enter The Number Of Column : ");
     scanf("%d",&y);
     for(int i = 1;i<=n;i++){
-        for(int i = 1;i<=y;i++){
-    printf("*");
+        for(int j = 1;j<=y;j++){
+    printf("%d ",i);
         }
         printf("\n");
     }
