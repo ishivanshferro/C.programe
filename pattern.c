@@ -2,9 +2,9 @@
 int main(){
     int n;
     n = 3;
-    for(int i = 65;i<=65+n ;i++){
-        for(int j = 65; j<=65+n ;j++){
-    printf("%c ",(char)i);
+    for(char i = 'A';i<'A'+n ;i++){
+        for(char j = 'A'; j<'A'+n ;j++){
+    printf("%c ",i);
         }
         printf("\n");
     }
