@@ -3,12 +3,11 @@ int main(){
     int n;
     printf("Enter The Number : ");
     scanf("%d",&n);
-    for(int i = 1; i<=n ; i++){
-        for(int j = 1; j<=i ; j++){
-            printf("%d ",j);
+    for(int i = 65; i<=65+n ; i++){
+        for(int j = 65; j<=i; j++){
+            printf("%c ",(char)j);
         }
         printf("\n");
     }
-
     return 0;
 }
