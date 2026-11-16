@@ -1,13 +1,16 @@
 #include<stdio.h>
-void shivanshkafunction(){
-    printf("Hey , Good Morning\n");
-    printf("How are you\n");
+void oddevenfunction(int x){
+    if(x%2==0){
+    printf("The number is even");
+    }
+    else{
+    printf("The number is odd");
+    }
 }
 int main(){
-    printf("lets check it is working or not\n");
-    shivanshkafunction();
-    printf("lol\n");
-    shivanshkafunction();
-    shivanshkafunction();
+    int a;
+    printf("Enter the number : ");
+    scanf("%d",&a);
+    oddevenfunction(a);
     return 0;
 }
