@@ -8,7 +8,7 @@ int fact(int z){
     return f;
 }
 int ncr(int r,int s){
-    return fact(r)/(fact(s)*fact(r-s));
+    return fact(r)/fact(r-s);
 }
     int main(){
         int r;
