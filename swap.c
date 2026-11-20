@@ -7,9 +7,12 @@ int main(){
     printf("Enter the Number : ");
     scanf("%d",&y);
     printf("%d %d\n",x,y);
-    int temp = x;
-    x = y;
-    y = temp;
+    // int temp = x;
+    // x = y;
+    // y = temp;
+    x = x + y;
+    y = x - y;
+    x = x -  y;
      printf("%d %d",x,y);
     return 0;
 }
