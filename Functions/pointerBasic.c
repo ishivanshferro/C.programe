@@ -4,8 +4,6 @@ int main(){
     int x = 9;
     int* z = &x;
     printf("%d\n",x);
-     printf("%p\n",&x);
-    printf("%p\n",z);
-     printf("%p\n",&z);
-    printf("%d\n",*z);
+    *z = 7;
+    printf("%d",x);
 }
