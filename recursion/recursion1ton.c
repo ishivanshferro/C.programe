@@ -1,16 +1,19 @@
 #include<stdio.h>
-void sum(int x,int sumnum){
-    if(x==0){
-        printf("%d",sumnum);
-        return;
+int ncr(int x){
+    if(x<0){
+        printf("error");
+        return - 1; 
     }
-    sum(x-1,sumnum+x);
-
+    if(x==1) return 1;
+    x = x * ncr(x-1);
+    return x;
 }
 int main(){
     int n;
-    printf("Enter The Number : ");
+    printf("Enter the number : ");
     scanf("%d",&n);
-    sum(n,0);
+    int ans;
+    ans = ncr(n);
+    printf("%d",ans);
     return 0;
 }
