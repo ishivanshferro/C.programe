@@ -18,7 +18,13 @@
 //     return 0;
 // }
 #include<stdio.h>
-#include<math.h>
+int raise(int x,int y){
+    int c = 1;
+    for(int i = 1;i<=y;i++){
+        c = c * x;
+    }
+    return c;
+}
 int main(){
    int n;
     printf("Enter the number : ");
@@ -27,7 +33,7 @@ int main(){
     printf("Enter the number : ");
     scanf("%d",&r);
     int ans;
-    ans = pow(n,r);
+    ans = raise(n,r);
     printf("%d",ans);
     
     return 0;
