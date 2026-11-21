@@ -1,13 +1,16 @@
 #include<stdio.h>
-void greet(int n,int x){
-    if(n>x) return;
-    printf("%d\n",n);
-    greet(n+1,x);
+void sum(int x,int sumnum){
+    if(x==0){
+        printf("%d",sumnum);
+        return;
+    }
+    sum(x-1,sumnum+x);
+
 }
 int main(){
     int n;
-    printf("Enter the number : ");
+    printf("Enter The Number : ");
     scanf("%d",&n);
-    greet(1,n);
+    sum(n,0);
     return 0;
 }
