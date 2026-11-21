@@ -2,9 +2,10 @@
 int main(){
     printf("\n");
     int x = 9;
-    int* z1 = &x;
-    int y = 9;
-    int* z2 = &y;
-    printf("%p\n%p\n",z1,z2);
-    return 0;
+    int* z = &x;
+    printf("%d\n",x);
+     printf("%p\n",&x);
+    printf("%p\n",z);
+     printf("%p\n",&z);
+    printf("%d\n",*z);
 }
