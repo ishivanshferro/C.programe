@@ -1,24 +1,22 @@
 #include<stdio.h>
 #include<stdbool.h>
+#include<limits.h>
 int main(){
-    int x;
-    printf("enter the number you want look : ");
-    scanf("%d",&x);
     int arr[] = {1,2,3,4,5,6,7,8,9};
+    int maximum = INT_MIN;
     int n;
     n = sizeof(arr)/sizeof(arr[0]);
-    bool  flag = false;
-    for(int i  = 0; i<n ; i++){
-    if(arr[i]==x){
-        flag = true;
-        break;
+    for(int i = 0 ; i<n; i++){
+        if(maximum < arr[i]){
+            maximum = arr[i];
+        }
     }
+    int smax = INT_MIN;
+    for(int i = 0 ; i<n; i++){
+        if(smax <  arr[i] && arr[i] < maximum){
+            smax = arr[i];
+        }
     }
-    if(flag==true){
-        printf("exist");
-    }
-    if(flag==false){
-        printf("no exist");
-    }
+    printf("%d",smax);
     return 0;
 }
