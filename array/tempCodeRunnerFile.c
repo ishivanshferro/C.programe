@@ -1,6 +1,3 @@
-   maximum = arr[i];
-        }
-    }
-    printf("%d",maximum);
-    return 0;
-}
+
+    i++;
+    j--;

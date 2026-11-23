@@ -6,10 +6,18 @@ int main(){
     for(int i = 0 ; i<n ; i++){
         printf("%d\n ",arr[i]);
     }
-    int brr[n];
-     for(int i = 0 ; i<n ; i++){
-        brr[i] = arr[n-1-i];
-        printf("%d ",brr[i]);
+    int i = 0;
+    int j = n-1;
+    while(i<j){
+        int temp = arr[j];
+        arr[j] = arr[i];
+        arr[i] = temp;
+    i++;
+    j--;
+    }
+     n = sizeof(arr)/sizeof(arr[0]);
+    for(int i = 0 ; i<n ; i++){
+        printf("%d ",arr[i]);
     }
 
     return 0;
