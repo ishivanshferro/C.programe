@@ -1,7 +1,12 @@
 #include<stdio.h>
 int main(){
     char str[] = "Physics Wallah";
-    printf("%c\n",str[5]);
-    printf("%d",str[9]);
+    str[0] = 'M';
+    str[1] = 97;
+    char x;
+    x = 65;
+    printf("%c\n",str[1]);
+    printf("%d\n",str[1]);
+    printf("%c",x);
     return 0;
 }
