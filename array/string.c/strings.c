@@ -10,12 +10,10 @@
 // }
 #include<stdio.h>
 int main(){
-    char arr[] = "Shivansh ";
+    char arr[] = "PhysicsWallah";
     int n;
     n = sizeof(arr)/sizeof(arr[0]);
-    for(int i = 0; i<n ; i++){
-        printf("%c",arr[i]);
-    }
+        printf("%s",arr);
     printf("\n%d",n);
     return 0;
 }
