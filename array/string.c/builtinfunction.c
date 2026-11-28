@@ -2,8 +2,6 @@
 #include<string.h>
 int main(){
     char str[] = "shivanshmishra";
-    char ptr[15];
-    strcpy(ptr,str);
-    printf("%s",ptr);
+    printf("%s",str);
     return 0;
 }
