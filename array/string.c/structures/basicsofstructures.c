@@ -1,15 +1,19 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    struct book{
-        int pages;
-        float price;
+    struct person{
+        int age;
+        float salary;
         char name[20];
     };
-    struct book b1;
-    b1.price = 4949.92;
-    b1.pages = 3839;
-    strcpy(b1.name,"top notch");
-    printf("%s",b1.name);
+    struct person firstperson;
+    firstperson.age = 40;
+    firstperson.salary = 4040400404.3;
+    strcpy(firstperson.name,"Raghav");
+     struct person secondperson;
+    secondperson.age = 41;
+    secondperson.salary = 4040400404.3;
+    strcpy(secondperson.name,"Maghav");
+    printf("%s\n%d",firstperson.name,secondperson.age);
     return 0;
 }
