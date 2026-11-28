@@ -1,20 +1,15 @@
 #include<stdio.h>
+#include<string.h>
 int main(){
-    int x;
-    x  = 5;
-    struct student{
-        int rollno;
-        float percentage;
-        char grade;
+    struct book{
+        int pages;
+        float price;
+        char name[20];
     };
-    struct student shivansh;
-    shivansh.grade = 'A';
-    shivansh.percentage = 90.67;
-    shivansh.rollno = 81;
-    printf("%c\n%f\n%d\n\n",shivansh.grade,shivansh.percentage,shivansh.rollno);
-    shivansh.grade = 'A';
-    shivansh.percentage = 90.17;
-    shivansh.rollno = 93;
-     printf("%c\n%f\n%d",shivansh.grade,shivansh.percentage,shivansh.rollno);
+    struct book b1;
+    b1.price = 4949.92;
+    b1.pages = 3839;
+    strcpy(b1.name,"top notch");
+    printf("%s",b1.name);
     return 0;
 }
